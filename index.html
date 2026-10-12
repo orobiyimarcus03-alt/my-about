@@ -11,16 +11,29 @@
 
 
     <style>
-        body{
+        :root {
+            --page-width: 800px;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
             background-color: black;
             display: flex;
             justify-content: center;
-            margin-top: 100px;
+            align-items: center;
+            padding: 24px;
         }
 
-        img{
-            height: 100%;
-            width: 800px;
+        img {
+            display: block;
+            width: min(var(--page-width), 92vw);
+            height: auto;
+            max-width: 100%;
         }
     </style>
 
